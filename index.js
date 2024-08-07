@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors')
 const bodyParser = require('body-parser');
 const authRoutes = require('./src/routes/authRoutes');
 const userRoutes = require('./src/routes/userRoutes');
@@ -8,6 +9,7 @@ const flashcardRoutes = require('./src/routes/flashcardRoutes');
 const app = express();
 const port = 8000;
 
+app.use(cors());
 app.use(bodyParser.json());
 
 app.use('/auth', authRoutes);
