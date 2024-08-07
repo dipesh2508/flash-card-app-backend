@@ -1,12 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const authRoutes = require('./routes/authRoutes');
-const userRoutes = require('./routes/userRoutes');
-const topicRoutes = require('./routes/topicRoutes');
-const flashcardRoutes = require('./routes/flashcardRoutes');
+const authRoutes = require('./src/routes/authRoutes');
+const userRoutes = require('./src/routes/userRoutes');
+const topicRoutes = require('./src/routes/topicRoutes');
+const flashcardRoutes = require('./src/routes/flashcardRoutes');
 
 const app = express();
-const port = 3000;
+const port = 8000;
 
 app.use(bodyParser.json());
 
